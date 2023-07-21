@@ -38,8 +38,12 @@ app.post("/todo", (request, response) => {
   // add new todo to "db"
   const title = request.body.title;
 
+  if (!title.length) {
+    response.status(400).json({ message: "title is required" });
+  }
+
   todos.push({
-    id: 1,
+    id: Math.random(),
     title: title,
     complete: false,
   });

@@ -1,3 +1,3 @@
 # Basic CRUD REST API with Express.js
 
-![Diagram](/demo.png)
+![Diagram](/assets/demo.png)
